@@ -3,7 +3,7 @@
 
 const fs = require("fs");
 const path = require("path");
-const LAB = require("../src");
+const LAB = require("../src/protocol-v1");
 
 function fail(message, code = 1) {
   process.stderr.write(`${message}\n`);
@@ -44,6 +44,7 @@ try {
     status: "success",
     module: bundle.module,
     moduleVersion: bundle.moduleVersion,
+    canonicalRepository: bundle.canonicalRepository,
     jobId: bundle.request.id,
     outputDir,
     handoffs: Object.keys(bundle.handoffs),
