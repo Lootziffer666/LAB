@@ -1,0 +1,22 @@
+node_modules/
+lab-out/
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+
+# Original game data and extracted proprietary payloads
+*.000
+*.001
+*.exe
+*.EXE
+*.ims
+*.IMS
+*.rom
+*.ROM
+*.sav
+*.SAV
+source-data/
+extracted/
