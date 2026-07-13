@@ -1,0 +1,13 @@
+{
+  "name": "legacy-adventure-bridge",
+  "version": "0.4.0",
+  "private": true,
+  "description": "Canonical coordination layer for DECOMPILE, TRIVIUM, WIZARD, SWIFT and SHADED.",
+  "main": "src/index.js",
+  "bin": { "lab": "bin/lab.js" },
+  "scripts": {
+    "check": "node --check src/index.js && node --check src/bellows-client.js && node --check src/plan-validator.js && node --check bin/lab.js",
+    "example": "node bin/lab.js examples/lab-request.example.json --out lab-out/example --json"
+  },
+  "engines": { "node": ">=18" }
+}
