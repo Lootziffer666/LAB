@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "authorized-adventure-study",
+  "title": "Authorized legacy adventure reconstruction",
+  "source": {
+    "kind": "directory",
+    "path": "./source-data/owned-game-copy",
+    "manifestPath": "./source-data/source-manifest.json",
+    "formatHint": "scumm-v5",
+    "ownershipConfirmed": true,
+    "provenance": "user-owned installation"
+  },
+  "intent": {
+    "target": "shaded",
+    "mode": "faithful-remaster",
+    "preserve": [
+      "puzzle causality",
+      "character timing",
+      "scene readability",
+      "music transition intent"
+    ]
+  },
+  "options": {
+    "actors": {
+      "width": 96,
+      "height": 96,
+      "colors": 24,
+      "backgroundRemoval": "none",
+      "baselineNormalization": false
+    },
+    "world": {
+      "act": "tag",
+      "params": {},
+      "freezeTime": true
+    }
+  }
+}
